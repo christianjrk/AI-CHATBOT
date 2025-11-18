@@ -1,159 +1,144 @@
-# AI-CHATBOT
-CHATBOT
-🧩 AI Chatbot Starter
-React + Node.js + Groq — Minimal, clean, ready to customize.
-Un starter kit sencillo, moderno y totalmente funcional para crear chatbots de IA.
-Ideal para aprender, construir proyectos rápidos, o usarlo como base para productos SaaS.
+# AI Chatbot Starter – React + Node + Groq (Llama 3)
 
-✨ Características
+A clean, modern and fully functional AI chatbot starter template built with **React + Vite**, **Node.js + Express**, and connected to **Groq’s Llama 3** models.
 
+This template is perfect for developers, freelancers and creators who want a fast, easy and professional starting point for building AI-powered apps, assistants, SaaS products or MVPs.
 
-⚡ Frontend en React + Vite
+---
 
+## ✨ Features
 
-🔧 Backend en Node.js + Express
+- ⚡ **Full-stack template:** React (frontend) + Node/Express (backend)
+- 🤖 **AI-powered replies** using **Groq (Llama 3)**
+- 💬 **Realtime chat UI** with a modern, clean interface
+- 🔌 Simple API endpoint: `POST /api/chat`
+- 🎨 Minimalistic dark UI ready for customization
+- 📁 Clean folder structure, easy to understand
+- 🔧 `.env` configuration for API keys
+- 🚀 Fast development with Vite + Nodemon
+- 🧩 Perfect as a base for micro-SaaS projects
 
+---
 
-🤖 Conexión lista para usar con Groq (Llama 3)
+## 🧱 Tech Stack
 
+**Frontend**
+- React  
+- Vite  
+- Fetch API  
 
-🔌 Proxy automático entre frontend y backend
+**Backend**
+- Node.js  
+- Express  
+- CORS  
+- Groq API (OpenAI-compatible endpoint)
 
+---
 
-💡 Código limpio, fácil de leer, ideal como plantilla
+## 📂 Project Structure
 
-
-🎨 Diseño moderno y minimalista
-
-
-🔐 API keys seguras mediante .env
-
-
-🚀 Rápido de desplegar en cualquier hosting
-
-
-
-🛠️ Tecnologías
-ÁreaTecnologíaFrontendReact + ViteBackendNode.js + ExpressIAGroq / Llama 3EstilosCSS mínimo (personalizable)Dev ToolsNodemon, Fetch API
-
-📁 Estructura del proyecto
-AI-CHATBOT
-├── backend
-│   ├── src
-│   │   └── server.js
-│   ├── .env.example
-│   ├── package.json
-│   └── README.md
+ai-chatbot-starter/
+├── backend/
+│ ├── src/
+│ │ └── server.js
+│ ├── .env.example
+│ └── package.json
 │
-└── frontend
-    ├── src
-    │   ├── App.jsx
-    │   └── main.jsx
-    ├── index.html
-    ├── vite.config.js
-    ├── package.json
-    └── README.md
+└── frontend/
+├── src/
+│ ├── App.jsx
+│ └── main.jsx
+├── index.html
+├── vite.config.js
+└── package.json
 
+yaml
+Copiar código
 
-🔧 Instalación
-1. Clonar este repositorio
-git clone https://github.com/tuusuario/AI-CHATBOT.git
-cd AI-CHATBOT
+---
 
+## 🔧 Installation & Setup
 
-▶️ Backend
-2. Instalar dependencias
+### 1️⃣ Clone the repository
+
+```bash
+git clone YOUR_REPO_URL
+cd ai-chatbot-starter
+2️⃣ Backend setup
+bash
+Copiar código
 cd backend
 npm install
-
-3. Crear archivo .env
 cp .env.example .env
+Edit .env and add your Groq API key:
 
-Editar .env con tu API key de Groq:
-AI_API_KEY=tu_clave_de_groq
+ini
+Copiar código
+AI_API_KEY=your_groq_api_key
 AI_API_BASE_URL=https://api.groq.com/openai/v1
 AI_MODEL=llama3-8b-8192
 PORT=3000
+Start the backend server:
 
-4. Iniciar el servidor
+bash
+Copiar código
 npm run dev
+Backend will run at:
 
-Backend listo en:
-👉 http://localhost:3000
-
-💻 Frontend
-5. Instalar dependencias
+arduino
+Copiar código
+http://localhost:3000
+3️⃣ Frontend setup
+bash
+Copiar código
 cd ../frontend
 npm install
-
-6. Iniciar el proyecto
 npm run dev
+Frontend will run at:
 
-Frontend en:
-👉 http://localhost:5173
+arduino
+Copiar código
+http://localhost:5173
+🚀 Usage
+Start backend (npm run dev)
 
-🤖 ¿Cómo funciona la IA?
-Tu frontend envía un mensaje a:
-POST /api/chat
+Start frontend (npm run dev)
 
-El backend lo envía a Groq (Llama 3)
-y devuelve la respuesta al frontend en tiempo real.
-Todo está ya configurado automáticamente.
+Type in the chat and the assistant will respond using Groq’s Llama 3 model
 
-🎨 Personalización
-Puedes modificar fácilmente:
+🧠 Customization
+You can easily customize:
 
+Chatbot name
 
-✔ Nombre del chatbot
+Colors, fonts, layout
 
+API model (Llama 3, etc.)
 
-✔ Colores principales
+System prompt
 
+UI styling
 
-✔ Logo
+The project is intentionally simple to extend.
 
+📄 Environment Variables
+Variable	Description
+AI_API_KEY	Your Groq API Key
+AI_API_BASE_URL	Groq API endpoint
+AI_MODEL	Model name (default: llama3-8b-8192)
+PORT	Backend port
 
-✔ Mensaje del sistema (la “personalidad” del bot)
+🛠 Future Improvements (optional)
+Loading indicator ("typing…")
 
+Message timestamps
 
-✔ Modelo de IA
+Markdown support
 
+System prompt configuration
 
-✔ Estilos del layout
+Chat history persistence
 
-
-Todo desde App.jsx.
-
-📦 Ideal para vender o reutilizar
-Este starter es perfecto si quieres:
-
-
-Crear tus propios chatbots
-
-
-Construir MVPs rápidos
-
-
-Vender plantillas (Gumroad, LemonSqueezy…)
-
-
-Enseñar IA a otros
-
-
-Hacer bots personalizados para clientes
-
-
-
-📜 Licencia
-Uso libre.
-Si vas a revender la plantilla, genera una versión final limpia sin tus claves.
-
-⭐ Si te gustó, deja una estrella en GitHub
-¡Tu apoyo hace crecer este proyecto! ⭐
-
-✔ README COMPLETO
-Esto ya es nivel producto premium.
-Cuando lo tengas pegado, dime:
-👉 “listo”
-Y pasamos al siguiente paso:
-crear el ZIP listo para Gumroad o subir a GitHub — tú eliges.
+📜 License
+This template is provided for personal and commercial use.
+Feel free to build your own projects or products on top of it.
