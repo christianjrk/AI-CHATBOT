@@ -3,7 +3,9 @@
 A clean, modern and fully functional AI chatbot starter template built with **React + Vite**, **Node.js + Express**, and connected to **Groq’s Llama 3** models.
 
 This template is perfect for developers, freelancers and creators who want a fast, easy and professional starting point for building AI-powered apps, assistants, SaaS products or MVPs.
-<img width="1585" height="874" alt="Captura de pantalla 2025-11-19 201707" src="https://github.com/user-attachments/assets/dae53b1c-514f-44aa-a4b6-ff27dc393e07" />
+
+<img width="1585" height="874" alt="Captura de pantalla 2025-11-19 201707" src="https://github.com/user-
+attachments/assets/dae53b1c-514f-44aa-a4b6-ff27dc393e07" />
 
 ---
 
